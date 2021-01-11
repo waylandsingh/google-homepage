@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+
+    <style>
+
+      body {
+        min-height: 100%;
+        position:relative;
+      }
+
+      #search-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+      }
+    
+      .container {
+        display:flex;
+        justify-content: center;
+        align-content:center;
+        
+      }
+    
+      .header-container{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between; 
+      
+      }
+    
+      .footer-container{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+      }
+    
+      .footer-column{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+      }
+    
+    </style>
+
+  </head>
+
+
+  <body>
+    <header>
+      <div class='header-container'>
+        <!-- should upleft/right bein 'headerinstead?' -->
+    
+        <div id="upleft">
+          <a href="">About</a>
+          <a href="">Store</a>
+        </div>
+    
+        <div id="upright">
+          <a href="">Gmail</a>
+          <a href="">Images</a>
+          <a href="">GridImage</a>
+          <a href="">SignInButton</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+  
+      <div id="search_logo">
+        <!-- use css grid/flexbox to arrange these -->
+        <img 
+        id = "logo_img"
+        alt="Google Logo"
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+      
+        <!-- Searchbar ... form? Icon? -->
+        <div id="searchbar">searchbar placeholder!</div>
+        <!-- Google Search Button -->
+  
+        <!-- I'm feeling lucky button -->
+  
+  
+      </div>
+  
+    </div>
+    
+    <footer class="footer-container">
+      <div class="footer-column">
+        <div id="f1">first thing</div>
+        <div id="f2">second things</div>
+      </div>
+    </footer>
+    
+  </body>
+
+</html>
