@@ -7,7 +7,6 @@
         <meta charset="utf-8">
         <title>wOOGLE</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<link rel="tylesheet" href="main.css"> <!-- resets to 'normalize' older-browser stuff-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <style>
@@ -21,20 +20,21 @@
         }
 
         #nav {
+            padding-top:1%;
+            padding-right:1%;
             display: flex;
             justify-content: space-between;
-			padding-top:10px
         }
+        /* #nav {
+            float:right;
+            margin-right:50px;
+        } */
 
         #nav li{
             list-style: none;
             display: inline-block;
-			padding: 10px;
-            text-align:center; 
+            text-align:justify;
         }
-		
-
-		
         
         #search {
             display: flex;
@@ -44,11 +44,6 @@
             margin-top: 15%;
             width: 100%;
         }
-		
-		#searchbar-wrapper {
-			display:flex; flex-direction:column;
-			flex-wrap:wrap; justify-content:space-around; flex:100%; margin-top:15px;
-		border: solid blue 2px;}
     </style>
     </head>
     
@@ -63,31 +58,22 @@
                 </div>
 
                 <div id="navright">
-                    <li><a href="">Gmail</a></li>
+                    <li><a href="">Wayland</a></li>
+                    <li><a href="">Mail</a></li>
                     <li><a href="">Images</a></li>
-					<li><div class="fa fa-th"></div></li>
-					<li><a href=""><img alt="W icon" src="https://lh3.googleusercontent.com/ogw/ADGmqu-abHn9DpWHjIJxvciutLbmNDzES80RU0_2mg1z=s32-c-mo"></a></li>
+                    <li><div class="fa fa-th"></div></li>
                 </div>
             </ul>
 
             <div id="search">
                 <!-- SEARCHBAR -->
-				<ul id="search-inputs">
                 <!-- logo -->
                 <img 
                 alt="Google Logo"
                 src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
             
-                <!-- form - actual page uses a div instead! -->
-				<div id="searchbar-wrapper" width=10000px>
-					<input class="searchbar" type="text" maxlength="2048" autofocus="true">
-					<ul id="searchbar-buttons">
-						<button>Search</button>
-						<button>I'm Feeling Lucky</button>
-					</ul>
-				</div>
+                <!-- form -->
                 <!-- list of buttons -->
-				</ul>
             </div>
 
             <ul id="bottom"></ul>
