@@ -1,49 +1,89 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-size: 100%; font-family: Arial, sans-serif; font-size:14px;
+		vertical-align: baseline;
+		
+			
+        }
+		a {text-decoration:none;}
+        .wrapper {
+            /* min-height: 100%; */
+            /*position:relative;*/
+        }
 
+        #nav {
+            display: flex;
+            justify-content: space-between;
+			align-items:center;
+			padding-top:0px
+        }
+
+        #nav li{
+            list-style: none;
+            display: inline-block;
+			padding: 10px;
+            text-align:center; 
+			text-color: black;
+        }
+		
+		#nav li a{
+			color:#5f6368;
+			}
+		
+		#navright {display:flex; align-items:center}
+		
+		#nav-icon a img{
+			border-radius:50%;
+			}
+		
+        
+        #search {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 100px;
+            position: static;
+            margin-top: 15%;
+			flex-direction:row;
+        }
+		
+		#searchbar-wrapper {
+			display:flex; flex-direction:column;
+			flex-wrap:wrap; justify-content:space-around; align-items:center; flex:100%; margin-top:15px;}
+		
+		#searchbar-buttons {margin-top:10px}
+		
+		#bottom-wrapper {background-color:#f2f2f2; }
+		
+		#bottom {
+			display: flex;
+			justify-content: space-between;
+			max-width:100%;
+			position: fixed;
+			bottom: -10px;
+			left: 0px;
+			right: 0px;
+			background-color: #f2f2f2;
+		}
+		
+		#bottom li {
+            list-style: none;
+            display: inline-block;
+			padding: 10px;
+		}
+		
+		#bottom a{color: #5f6368;}
+		
+		#bot1 a {padding-left:0, margin-left:-10px; }
+		
