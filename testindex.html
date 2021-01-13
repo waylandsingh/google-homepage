@@ -6,14 +6,29 @@
     <head>
         <meta charset="utf-8">
         <title>wOOGLE</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  
 	<link rel="tylesheet" href="main.css"> <!-- resets to 'normalize' older-browser stuff-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <style>
-        html,
-        body {
-            /* height: 100%; */
+	
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-size: 100%; font-family: Arial, sans-serif; font-size:14px;
+		vertical-align: baseline;
+		
+			
         }
         .wrapper {
             /* min-height: 100%; */
@@ -23,7 +38,8 @@
         #nav {
             display: flex;
             justify-content: space-between;
-			padding-top:10px
+			align-items:center;
+			padding-top:0px
         }
 
         #nav li{
@@ -31,7 +47,18 @@
             display: inline-block;
 			padding: 10px;
             text-align:center; 
+			text-color: black;
         }
+		
+		#nav li a{
+			color:#5f6368;
+			}
+		
+		#navright {display:flex; align-items:center}
+		
+		#nav-icon a img{
+			border-radius:50%;
+			}
 		
         
         #search {
@@ -45,11 +72,11 @@
 		
 		#searchbar-wrapper {
 			display:flex; flex-direction:column;
-			flex-wrap:wrap; justify-content:space-around; flex:100%; margin-top:15px;}
+			flex-wrap:wrap; justify-content:space-around; align-items:center; flex:100%; margin-top:15px;}
 		
 		#searchbar-buttons {margin-top:10px}
 		
-		#bottom-wrapper {background-color:#f2f2f2; background-color: #fff}
+		#bottom-wrapper {background-color:#f2f2f2; }
 		
 		#bottom {
 			display: flex;
@@ -59,8 +86,9 @@
 			bottom: -10px;
 			left: 0px;
 			right: 0px;
-			border-top: 1px solid #202124;
 			background-color: #f2f2f2;
+			border: 1px solid red
+			
 
 		}
 		
@@ -69,6 +97,10 @@
             display: inline-block;
 			padding: 10px;
 		}
+		
+		#bottom a{color: #5f6368;}
+		
+		#bot1 a {padding-left:0, margin-left:-10px; border: 1px solid red}
 		
     </style>
     </head>
@@ -87,7 +119,7 @@
                     <li><a href="">Gmail</a></li>
                     <li><a href="">Images</a></li>
 					<li><div class="fa fa-th"></div></li>
-					<li><a href=""><img alt="W icon" src="https://lh3.googleusercontent.com/ogw/ADGmqu-abHn9DpWHjIJxvciutLbmNDzES80RU0_2mg1z=s32-c-mo"></a></li>
+					<li id="nav-icon"><a href=""><img alt="W icon" src="https://lh3.googleusercontent.com/ogw/ADGmqu-abHn9DpWHjIJxvciutLbmNDzES80RU0_2mg1z=s32-c-mo"></a></li>
                 </div>
             </ul>
 
@@ -116,19 +148,19 @@
 		
 		<div id="bottom-wrapper">
 			<ul id="bottom">
-					<div id="bot1">
-						<li><a href="">Advertising</a></li>
-						<li><a href="">Business</a></li>
-						<li><a href="">How Search Works</a></li>
-					</div>
-					<div id="bot2">
-						<li><a href="">Carbon neutral since 2007</a></li>
-					</div>
-					<div id="bot3">
-						<li><a href="">Privacy</a></li>
-						<li><a href="">Terms</a></li>
-						<li><a href="">Settings</a></li>
-					</div>
+				<div id="bot1">
+					<li><a href="">Advertising</a></li>
+					<li><a href="">Business</a></li>
+					<li><a href="">How Search Works</a></li>
+				</div>
+				<div id="bot2">
+					<li><a href="">Carbon neutral since 2007</a></li>
+				</div>
+				<div id="bot3">
+					<li><a href="">Privacy</a></li>
+					<li><a href="">Terms</a></li>
+					<li><a href="">Settings</a></li>
+				</div>
 				
 			</ul>
 		</div>
