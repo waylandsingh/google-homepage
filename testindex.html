@@ -17,7 +17,7 @@
         }
         .wrapper {
             /* min-height: 100%; */
-            position:relative;
+            /*position:relative;*/
         }
 
         #nav {
@@ -33,22 +33,43 @@
             text-align:center; 
         }
 		
-
-		
         
         #search {
             display: flex;
             justify-content: space-around;
             padding-bottom: 100px;
-            position: absolute;
+            position: static;
             margin-top: 15%;
-            width: 100%;
+			flex-direction:row;
         }
 		
 		#searchbar-wrapper {
 			display:flex; flex-direction:column;
-			flex-wrap:wrap; justify-content:space-around; flex:100%; margin-top:15px;
-		border: solid blue 2px;}
+			flex-wrap:wrap; justify-content:space-around; flex:100%; margin-top:15px;}
+		
+		#searchbar-buttons {margin-top:10px}
+		
+		#bottom-wrapper {background-color:#f2f2f2; background-color: #fff}
+		
+		#bottom {
+			display: flex;
+			justify-content: space-between;
+			max-width:100%;
+			position: fixed;
+			bottom: -10px;
+			left: 0px;
+			right: 0px;
+			border-top: 1px solid #202124;
+			background-color: #f2f2f2;
+
+		}
+		
+		#bottom li {
+            list-style: none;
+            display: inline-block;
+			padding: 10px;
+		}
+		
     </style>
     </head>
     
@@ -86,13 +107,31 @@
 						<button>I'm Feeling Lucky</button>
 					</ul>
 				</div>
-                <!-- list of buttons -->
 				</ul>
             </div>
-
-            <ul id="bottom"></ul>
+			
+            
+			
         </div>
-
+		
+		<div id="bottom-wrapper">
+			<ul id="bottom">
+					<div id="bot1">
+						<li><a href="">Advertising</a></li>
+						<li><a href="">Business</a></li>
+						<li><a href="">How Search Works</a></li>
+					</div>
+					<div id="bot2">
+						<li><a href="">Carbon neutral since 2007</a></li>
+					</div>
+					<div id="bot3">
+						<li><a href="">Privacy</a></li>
+						<li><a href="">Terms</a></li>
+						<li><a href="">Settings</a></li>
+					</div>
+				
+			</ul>
+		</div>
     </body>
     
 </html>
